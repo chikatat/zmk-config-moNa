@@ -14,35 +14,6 @@
 };
 
 / {
-    //コンボ設定
-    combos {    
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;   //押したとき実行されるコマンド
-            key-positions = <11 12>;    //押すキーの位置
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-    };
 
     //マクロ(既存のキーの組み合わせ)
     macros {
@@ -64,16 +35,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-        mouse_scroll: mouse_wheel_scrl{
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-            // 追加: スクロールのタップ時間を設定 (20ms)
-            tap-ms = <20>;
-        };
-
-
     };
 
     //キーマップ設定
