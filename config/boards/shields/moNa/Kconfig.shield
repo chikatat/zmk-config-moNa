@@ -1,5 +1,5 @@
-config SHIELD_MONA_R
-    def_bool $(shields_list_contains,moNa_R)
+config SHIELD_SOBA_R
+    def_bool $(shields_list_contains,soba_R)
 
-config SHIELD_MONA_L
-    def_bool $(shields_list_contains,moNa_L)
+config SHIELD_SOBA_L
+    def_bool $(shields_list_contains,soba_L)
